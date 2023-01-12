@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+import './App.css'
+import Img from "./Img";
+const App = () => {
+    const arr=[
+        "http://docs.google.com/uc?export=open&id=19-Q9JSH3ZvC40lOlUttxf4wtPVm9ctIU",
+        "http://docs.google.com/uc?export=open&id=1QB2q13sop1x86CbOf5c5NBY0geWhk2hZ",
+        "http://docs.google.com/uc?export=open&id=1ARbwqW_uOLb4eCeWsyCJVZSYUIreXsrD",
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    ]
+    return (
+        <div className='App'>
+            {arr.map((item,index) => <Img key={index} src={item}/>)}
+        </div>
+    )
 }
-
 export default App;
+
+
+
