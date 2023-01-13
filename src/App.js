@@ -1,20 +1,12 @@
-import React from "react"
-import './App.css'
-import Img from "./Img";
+import React from "react";
 const App = () => {
-    const arr=[1,2,3
-        /*"http://docs.google.com/uc?export=open&id=19-Q9JSH3ZvC40lOlUttxf4wtPVm9ctIU",
-        "http://docs.google.com/uc?export=open&id=1QB2q13sop1x86CbOf5c5NBY0geWhk2hZ",
-        "http://docs.google.com/uc?export=open&id=1ARbwqW_uOLb4eCeWsyCJVZSYUIreXsrD",*/
-
-    ]
+    let name="Ranjith"
     return (
-        <div className='App'>
-            {arr.map((item,index) => <Img key={index} src={item}/>)}
+        <div>
+            <center>
+                <h3>Hello {name}</h3>
+            </center>
         </div>
     )
 }
-export default App;
-
-
-
+export default App
