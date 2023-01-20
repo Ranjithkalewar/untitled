@@ -5,7 +5,7 @@ const Test = (props) => {
             <div>
                 <center>
                     <h2>
-                        hello my name is {props.name} and my age is {props.age}. I have completed my {props.study} form jawaharlal Engineering college. My email address is {props.email} and my phone number is {props.phone}.
+                        Hello my name is {props.name} and my age is {props.age}. I have completed my {props.study} from Jawaharlal Nehru Engineering college. My email address is {props.email} and my phone number is +47 {props.phone}.
                     </h2>
                 </center>
             </div>
